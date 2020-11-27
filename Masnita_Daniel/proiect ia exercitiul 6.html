@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title> Proiect_Unit2 partea2 </title>
+<title> Proiect_Unit2 </title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<style>
 			body { background-color: white }
@@ -56,11 +56,12 @@
 				margin-left:70px;}
 				
 			div.bor{background-color:#BBDEFB;
-			border:3px solid orange;
+			border:3px solid #FFE4B5;
 			margin-top:40px;
 			margin-bottom:40px;}
 			
-			div.bord{background-color:#607D8B}
+			div.bord{background-color:#607D8B;
+			border:3px solid black;}
 
 	</style>
 	<script>
@@ -89,14 +90,14 @@ function showSlides() {
 	</head>
 <body>
 <div>
-		<h1>Masnita Daniel Stefan</h1>
-		<p><a href="">masnita.st.daniel@utcluj.didatec.ro</a> </p>
+		<h1 style="color:green">Masnita Daniel Stefan</h1>
+		<p > <a style="color:red" href="">masnita.st.daniel@utcluj.didatec.ro</a> </p>
 		<h2 style="text-decoration:underline"> Specificatii tehnice ale statiei principale de lucru</h2>
 		<table>
-	<tr>
-		<td style="text-align:center;">  Denumire componenta  </td>
-		<td style="text-align:center;">  Parametri  </td>
-		<td style="text-align:center;"/>  Producator  </td>
+	<tr style="color:#cc0000">
+		<td style="text-align:center">  Denumire componenta  </td>
+		<td style="text-align:center">  Parametri  </td>
+		<td style="text-align:center">  Producator  </td>
 	</tr>
 	<tr>
 		<td>CPU</td>
@@ -126,7 +127,7 @@ function showSlides() {
 		ieșire: 20  V  c.c  </td>
 		<td>fabricat in china</td>
 	</tr>
-		</table>
+		</table >
 		<div class="bor">
 		
 		<h3 style="text-decoration:underline"> Structura retelei personale si accesul la internet</h3>
@@ -148,7 +149,7 @@ function showSlides() {
 		<img  class="conex" src="upload.PNG"/>
 		</div>
 
-		<button class="button" ondblclick="slideshow()" ><h5 style="text-decoration:underline">Monitorizarea resurselor(slideshow)</h5></button>
+		<button class="button" ondblclick="slideshow()" ><h5 style="text-decoration:underline">Monitorizarea resurselor(double-click pe text pentru slideshow)</h5></button>
 <div class="bord">
 		<div class="slideshow-container">
 		
@@ -176,8 +177,10 @@ function showSlides() {
 <div class="mySlides ">
   <div class="text">Ports</div>
   <img class="image" src="imagine5.png"/>
-  
 </div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 <div style="text-align:center">
   <span class="dot"></span> 
   <span class="dot"></span> 
@@ -189,5 +192,6 @@ function showSlides() {
 </div>
 
 	</div>
+	<script src="prevnext.js"></script>
 </body>
 </html>
